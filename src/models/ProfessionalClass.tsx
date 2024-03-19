@@ -1,4 +1,4 @@
-interface Provider {
+interface Professional {
   id: string;
   name: string;
   email: string;
@@ -9,4 +9,4 @@ interface Provider {
   des: string;
 }
 
-export default Provider;
+export default Professional;

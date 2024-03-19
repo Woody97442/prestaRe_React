@@ -1,13 +1,13 @@
 import User from "@/models/UserClass";
 import Job from "@models/JobClass";
-import Provider from "@models/ProviderClass";
+import Professional from "@/models/ProfessionalClass";
 
 const API_URL = "http://localhost:3000/";
 
-export const getProviders = async () => {
-    const response = await fetch(`${API_URL}providers`);
-    const providers = await response.json();
-    return providers as Provider[];
+export const getProfessionals = async () => {
+    const response = await fetch(`${API_URL}professional`);
+    const professionals = await response.json();
+    return professionals as Professional[];
 };
 
 export const getUsers = async () => {
@@ -18,8 +18,8 @@ export const getUsers = async () => {
 
 export const getJobs = async () => {
     const response = await fetch(`${API_URL}jobs`);
-    const providers = await response.json();
-    return providers as Job[];
+    const jobs = await response.json();
+    return jobs as Job[];
 };
 
 export const login = async (email: string, password: string) => {

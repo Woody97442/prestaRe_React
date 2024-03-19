@@ -1,7 +1,7 @@
 import AuthDialog from "@/components/Auth/AuthDialog";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Providers from "@/components/Providers";
+import Professionals from "@/components/Professionals";
 import ToastMessage from "@/components/ToastMessage";
 import ToolBar from "@/components/ToolBar";
 
@@ -14,7 +14,7 @@ function HomePage() {
       </header>
       <main>
         <ToolBar />
-        <Providers />
+        <Professionals />
       </main>
       <footer>
         <ToastMessage />
